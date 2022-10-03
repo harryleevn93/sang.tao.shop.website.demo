@@ -12,13 +12,14 @@ svg{
 }
 
 body{
-    margin:0;
-    padding:0;
+    padding: 0px;
     background-color: transparent;
     border: 15px solid #404040;
     border-radius: 20px;
     width: 360px;
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 *, *::before, *:after{
