@@ -1,0 +1,312 @@
+/* ========== Overall Setting ========== */
+/* Import FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,500&display=swap');
+
+a{
+    text-decoration: none;
+    color: #404040;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: transparent;
+    border: 15px solid #404040;
+    border-radius: 20px;
+    width: 360px;
+    margin: auto;
+}
+
+*, *::before, *:after{
+    box-sizing: border-box;
+}
+
+/* Các dòng màu nền khi hoàn tất sẽ bỏ đi */
+.reset-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ========== Header Styles ========== */
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-top: 15px;
+    position: relative;
+    justify-content: space-between;
+    height: 45px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+}
+
+header .header-logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 8px;
+}
+
+header > *:first-child{
+    margin-right: auto;
+}
+
+header .logo{
+    width: 120px;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+header svg{
+    fill: #bbb;
+    width: 20px;
+    height: 20px;
+}
+
+header .header-shopping{
+    position: relative;
+    margin-right: 20px;
+}
+
+header .header-shopping span{
+    position: absolute;
+    margin-left: 12px;
+    margin-top:-8px;
+    border: solid 1px #bbb;
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Banner Styles ========== */
+
+.banner{
+    background-color: transparent;
+}
+
+.banner-slide{
+    height: 200px;
+}
+
+.banner-slide .swiper-slide{
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-slide .b1{
+    background-image: url("../src/cabrio4.webp");
+}
+
+.banner-slide .b2{
+    background-image: url("../src/cabrio5.webp");
+}
+
+.banner-slide .b3{
+    background-image: url("../src/cabrio6.webp");
+}
+
+.banner-slide .b4{
+    background-image: url("../src/cabrio7.webp");
+}
+
+.banner-slide .b5{
+    background-image: url("../src/cabrio8.webp");
+}
+
+.banner .swiper-pagination{
+    background-color: #fafafa;
+    position: static;
+    padding: 10px 0 10px 0;
+}
+
+.banner .swiper-pagination-bullet{
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #bbb;
+    opacity: 1;
+}
+
+.banner .swiper-pagination-bullet-active{
+    background-color: orangered;
+}
+
+/* ========== Product Section Styles ========== */
+
+.products{
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.product_heading{
+    margin-top: 0px;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.0rem;
+}
+
+.product_heading::before {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}
+
+.products > ul > li{
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 20px;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px 60px rgba(255, 255, 255, 0.3);
+}
+
+.products a{
+    text-decoration: none;
+}
+
+.products img{
+    width: 100%;
+}
+
+.products p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.products .product_name{
+    font-weight: 800;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black
+}
+
+.products .price{
+    color: orangered;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    font-size: large;
+}
+
+.products del{
+    color: #bbb;
+    font-size: medium;
+    padding-left: 5px; 
+}
+
+.products > ul > li:last-child{
+    margin-bottom: 0px;
+}
+
+.the-button{
+    margin-top: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn-std{
+    padding: 5px;
+    border: solid 1px #999;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-main{
+    background-color: orangered;
+    color: #fff;
+    border-color: rgb(134, 45, 12);
+}
+
+/* ========== Shop Pagination Styles ========== */
+
+.shop-pagination{
+    background-color: #FAFAFA;
+    padding: 0px 0px 20px 0px;
+}
+
+.shop-pagination ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop-pagination svg{
+    width: 20px;
+    height: 20px;
+}
+
+.shop-pagination .btn-square{
+    border: solid 1px #bbb;
+    background-color: #fafafa;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Footer Styles ========== */
+
+footer{
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer .company_name{
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer p{
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
+
+footer .social-links{
+    display: flex;
+    gap: 10px;
+}
+
+footer .footer_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer .footer_menu li{
+    margin: 5px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
+
+footer .address{
+    margin: 5px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
